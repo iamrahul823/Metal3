@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metal³ Website</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/49879880?s=200&v=4">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+	<header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo/Image -->
+                <a class="navbar-brand" href="#">
+                    <img src="https://avatars.githubusercontent.com/u/49879880?s=200&v=4" alt="Logo">
+                    Metal³
+                </a>
+    
+                <!-- Toggle button for light/dark mode -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="https://metal3.io/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://metal3.io/documentation.html">Documentation
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <!-- Light/dark mode toggle switch -->
+                    <div class="ml-auto">
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                  
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+		<div class="jumbotron">
+			<h1><strong>Metal³</strong></h1>
+			<p>A Kubernetes-native infrastructure management platform for bare metal servers</p>
+		</div>
+		<div class="container">
+			<h2><strong>Welcome to the Metal<sup>3</sup></strong><br><br>
+            
+            </div>
+            <div class="container">
+                <h3>About Metal³</h3><br>
+                <p>Metal³ is a Free and Open Source Software (FOSS) community that aims to simplify the deployment and management of bare metal infrastructure in a Kubernetes environment. It provides a declarative way to manage bare metal servers using the Kubernetes API, allowing users to provision and manage their bare metal infrastructure in a scalable, reliable, and automated way.</p><br>
+                <h3>Project</h3><br>
+                <p>The Metal³ project is part of the Kubernetes project and is a subproject of the Cluster API project. The project's mission is to provide a declarative API-driven approach to bare metal infrastructure management that is consistent with the Kubernetes API and ecosystem. Metal³ is backed by Ironic, a component from the OpenStack ecosystem, which is responsible for booting and installing machines. Metal³ handles the installation of Ironic as a standalone component and can provision machines regardless of the brand of hardware. Ironic is supported by a mature community of hardware vendors and supports a wide range of bare metal management protocols.</p><br>
+                <h3>Goal</h3><br>
+                <p>The goal of Metal³ is to provide a Kubernetes-native infrastructure management platform for bare metal servers. This means that Metal³ aims to make it easy to manage and deploy Kubernetes clusters on bare metal servers by providing tools and components that integrate with Kubernetes resources and APIs. By doing so, Metal³ eliminates the need for separate management tools for bare metal infrastructure, making it easier to manage and maintain Kubernetes clusters on bare metal. The project also aims to be open-source and community-driven, encouraging contributions and collaboration from a wide range of developers and users.</p><br>
+                <h3>Mission</h3><br>
+                <p>The mission of the Metal³ project is to simplify the management and deployment of Kubernetes clusters on bare metal servers. The project aims to achieve this mission by providing a Kubernetes-native infrastructure management platform that can enroll bare metal machines, provision operating system images, and deploy Kubernetes clusters to them. Metal³ also supports upgrading Kubernetes or the operating system in the clusters with a non-disruptive rolling strategy and automatically remediating failed nodes. Metal³ is an open-source project that welcomes community contributions and strives to be inclusive and diverse. Ultimately, the mission of Metal³ is to make it easier for developers and operators to manage and maintain their bare metal infrastructure, and to empower organizations to run Kubernetes on their own hardware.</p><br>
+                <h3>Components</h3><br>
+                <p>This project mainly consists of several components. The main components are:</p>
+                <ul>
+                    <li>Bare Metal Operator: The Bare Metal Operator is a Kubernetes operator that manages the lifecycle of bare metal hosts. It can discover hardware inventory, configure BIOS and RAID settings, install and boot an operating system image of choice, and deploy Kubernetes.</li>
+                    <li>Cluster API: The Cluster API Provider Metal³ is a Kubernetes provider that integrates the Cluster API sub-project with Metal³ components. It enables the creation and management of Kubernetes clusters on bare metal servers using the Cluster API.</li>
+                    <li>Ironic: Ironic is a standalone component from the OpenStack ecosystem that Metal³ uses for booting and installing machines. Metal³ handles the installation of Ironic as a standalone component, making it easy to use without having to bring along the rest of OpenStack.</li>
+                    <li>Bare Metal-operator: The bare metal-operator is a Kubernetes controller that automates the process of discovering and managing bare metal infrastructure. It can manage hardware inventory, perform RAID configuration, and provision and install operating systems.</li>
+                    <li>Tempest-plugin: The Metal³ Tempest plugin is used.<br><br>
+                    </ul>
+                    <h2>Get Involved</h2><br>
+                    <p>Metal³ is an open-source project that welcomes community contributions and strives to be inclusive and diverse. To get involved:</p>
+
+                   
+                    <ul>
+                    <li>Check out the <a  href="https://metal3.io" style="color:#36AE7C;">Metal³ website</a> for more information and documentation.</li>
+                    
+                    <li>Join the Metal³ community on <a  href="https://github.com/metal3-io/" style="color:#36AE7C;"">GitHub</a>.</li>
+                    <li>Join the conversation on the <a  href="https://kubernetes.slack.com/messages/CFA90KZGA" style="color:#36AE7C;">Kubernetes Slack</a> in the #metal channel.</li>
+                    </ul>
+                    </div>
+                   
+
+<!-- SOCIAL PANEL HTML -->
+<div class="social-panel-container">
+	<div class="social-panel">
+		<p>Created with <i class="fa fa-heart"></i> by
+			<a target="_blank" >Rahul</a></p>
+		<button class="close-btn"><i class="fas fa-times"></i></button>
+		<h4>Get in touch on</h4>
+		<ul>
+			<li>
+				<a href="https://kubernetes.slack.com/?redir=%2Fmessages%2FCHD49TLE7" target="_blank">
+					<i class="fab fa-slack"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/metal3_io" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/channel/UC_xneeYbo-Dl4g-U78xW15g" target="_blank">
+					<i class="fab fa-youtube"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://groups.google.com/g/metal3-dev?pli=1" target="_blank">
+					<i class="fab fa-google"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/metal3-io" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<button class="floating-btn">
+	Get in Touch
+</button>
+
+
+
+<footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">Metal³ Website &copy; 2023</span>
+    </div>
+  </footer>
+  
+
+
+                        <script src="https://kit.fontawesome.com/e05d3b2136.js" crossorigin="anonymous"></script>
+             
+
+
+<script src="index.js"></script>
+                    </body>
+                    </html>
